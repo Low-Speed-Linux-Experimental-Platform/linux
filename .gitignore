@@ -54,6 +54,9 @@
 Module.symvers
 modules.order
 
+*.dump
+uImage
+
 #
 # Top-level generic files
 #

@@ -1373,6 +1373,7 @@ static void __init arch_reserve_crashkernel(void)
 
 void __init paging_init(void)
 {
+	pr_err("[paging_init] Test of earlycon printk\n");
 	setup_bootmem();
 	setup_vm_final();
 
