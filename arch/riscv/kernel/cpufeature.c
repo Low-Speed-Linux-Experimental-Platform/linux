@@ -708,6 +708,7 @@ unsigned long riscv_get_elf_hwcap(void)
 
 static int check_unaligned_access(void *param)
 {
+	return 0;
 	int cpu = smp_processor_id();
 	u64 start_cycles, end_cycles;
 	u64 word_cycles;
