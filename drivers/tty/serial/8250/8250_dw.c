@@ -629,6 +629,8 @@ static int dw8250_probe(struct platform_device *pdev)
 	if (data->uart_16550_compatible)
 		p->handle_irq = NULL;
 
+	data->skip_autocfg = 1;
+
 	if (!data->skip_autocfg)
 		dw8250_setup_port(p);
 
